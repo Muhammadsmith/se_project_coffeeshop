@@ -104,7 +104,7 @@
         <section class="reservation" id="bookatable">
           <h2 class="reservation__title">Book a table</h2>
           <form class="reservation__form form">
-            <feildset class="form__fieldset">
+            <fieldset class="form__fieldset">
               <label for="name" class="form__label">
                 Name *
                 <input
@@ -127,7 +127,12 @@
               </label>
               <label for="date" class="form__label">
                 Date & time *
-                <input type="datetime-local" class="form__input" id="date" />
+                <input
+                  type="datetime-local"
+                  class="form__input"
+                  id="date"
+                  required
+                />
               </label>
               <label for="email" class="form__label">
                 Your email *
@@ -136,12 +141,18 @@
                   class="form__input"
                   id="email"
                   placeholder="email@email.com"
+                  required
                 />
               </label>
-            </feildset>
+            </fieldset>
             <button class="form__button">Book a table</button>
             <label for="checkbox" class="form__label form__label_type_checkbox">
-              <input type="checkbox" class="form__checkbox" id="checkbox" />
+              <input
+                type="checkbox"
+                class="form__checkbox"
+                id="checkbox"
+                required
+              />
               I agree with terms of use
             </label>
           </form>
